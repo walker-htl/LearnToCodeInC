@@ -1,10 +1,8 @@
 # LearnToCodeInC
 
 In diesem Repository findet ihr die Coding Beispiele aus dem Unterricht und Informationen zur Programmiersprache C.
-<span style="color:orange;">Word up</span>
 
 ## Links
-
 * Ein [Wikipedia Artikel zur Programmiersprache C](https://de.wikipedia.org/wiki/C_(Programmiersprache)), der interessante Informationen liefert.
 * [The C Book](https://publications.gbdirect.co.uk/c_book/)
 
