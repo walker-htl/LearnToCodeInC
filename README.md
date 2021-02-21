@@ -1,16 +1,21 @@
 # LearnToCodeInC
 
 In diesem Repository findet ihr die Coding Beispiele aus dem Unterricht und Informationen zur Programmiersprache C.
+<span style="color:orange;">Word up</span>
 
 ## Links
 
 * Ein [Wikipedia Artikel zur Programmiersprache C](https://de.wikipedia.org/wiki/C_(Programmiersprache)), der interessante Informationen liefert.
 * [The C Book](https://publications.gbdirect.co.uk/c_book/)
 
+Im Unterricht verwenden wir diese Kursunterlagen:
+* [Kurs C-Programmierung](https://www.tu-chemnitz.de/urz/archiv/kursunterlagen/C/)
+
 ## Compiler
 * Linux und Mac verwenden den gcc (einfach und schnell installiert)
 * Windows [MinGW-w64 - for 32 and 64 bit Windows](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/)
 * Alle Windows User sollten sich dieses Youtube Video ansehen (ab Sekunde 50 wird es interessant!) [How to Install MinGW (GCC/G++) Compiler in Windows 10](https://www.youtube.com/watch?v=sXW2VLrQ3Bs)
+* [Online C Compiler/Interpreter](https://www.onlinegdb.com/online_c_compiler)
 
 ## Entwicklungsumgebungen (IDE)
 Wir verwenden im Unterricht:
