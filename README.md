@@ -9,6 +9,9 @@ In diesem Repository findet ihr die Coding Beispiele aus dem Unterricht und Info
 Im Unterricht verwenden wir diese Kursunterlagen:
 * [Kurs C-Programmierung](https://www.tu-chemnitz.de/urz/archiv/kursunterlagen/C/)
 
+Unterstützung durch eLearning:
+[Programmieren in C von studyflix](https://studyflix.de/informatik-schueler/thema/programmieren-in-c-17)
+
 ## Compiler
 * Linux und Mac verwenden den gcc (einfach und schnell installiert)
 * Windows [MinGW-w64 - for 32 and 64 bit Windows](https://sourceforge.net/projects/mingw-w64/files/mingw-w64/mingw-w64-release/)
