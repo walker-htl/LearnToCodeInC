@@ -13,6 +13,10 @@ In diesem Repository findet ihr die Coding Beispiele aus dem Unterricht und Info
 * Alle Windows User sollten sich dieses Youtube Video ansehen (ab Sekunde 50 wird es interessant!) [How to Install MinGW (GCC/G++) Compiler in Windows 10](https://www.youtube.com/watch?v=sXW2VLrQ3Bs)
 
 ## Entwicklungsumgebungen (IDE)
+Wir verwenden im Unterricht:
+* **CLion von Jetbrains** - Siehe bzgl. Lizenzierung das pdf Dokument in Teams!
+
+Weitere Möglichkeiten:
 * [Visual Studio Code](https://code.visualstudio.com/)
   * Plugins: C/C++, Code Runner
     * Terminalausgabe konfigurieren
@@ -22,7 +26,6 @@ In diesem Repository findet ihr die Coding Beispiele aus dem Unterricht und Info
   * Funktioniert super mit Windows und Linux 
   * Installer integriert für Windows den MingW Compiler
   * Mac User könnten Probleme haben, es wird aktuell nur eine ältere Version zur Verfügung gestellt
-* CLion von Jetbrains - Wie gewohnt können wir diese IDE verwenden.
 
 ## Apps
 * **C Programming** - kostenpflichtig und ziemlich simple
