@@ -1,0 +1,3 @@
+C:/Users/kew/Documents/HTL/Dev/LearnToCodeInC/02_Basics/cmake-build-debug/CMakeFiles/02_Basics.dir
+C:/Users/kew/Documents/HTL/Dev/LearnToCodeInC/02_Basics/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/kew/Documents/HTL/Dev/LearnToCodeInC/02_Basics/cmake-build-debug/CMakeFiles/rebuild_cache.dir
