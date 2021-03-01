@@ -1,0 +1,3 @@
+/home/walter/Dev/htl/myProject/LearnToCodeInC/03_Arrays/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/walter/Dev/htl/myProject/LearnToCodeInC/03_Arrays/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/walter/Dev/htl/myProject/LearnToCodeInC/03_Arrays/cmake-build-debug/CMakeFiles/03_Arrays.dir
