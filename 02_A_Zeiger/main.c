@@ -34,6 +34,12 @@ int main() {
     printf("Adresse von i (hex)     = 0x%x\n", &i);
     printf("----------------------------------------\n");
 
+    // Zeige den Inhalt der Adresse einer Variablen
+    // Wir schauen im Kreis :-)
+    printf("Derefernziere Adresse von i: %d\n", *&i);
+
+    printf("----------------------------------------\n");
+
     int x = 2;
     int y = 3;
 
