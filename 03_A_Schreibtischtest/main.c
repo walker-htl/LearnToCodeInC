@@ -17,7 +17,9 @@ void MethodA(int position, char *point) {
 int main() {
     int a = 4;
     char text[10] = "Hello HTL";
-    char *start = text;
+    printf("\n%p\n", text);
+    char* start;
+    start = text;
 
     printf("Show text     : %s\n", text);
     MethodA(a, start);
