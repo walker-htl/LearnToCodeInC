@@ -27,6 +27,13 @@ void changeAnnToPat(char* pointToArray) {
     *++pointToArray = 't';
 }
 
+void swap (int *i1, int *i2)
+{
+    int help = *i1;
+    *i1 = *i2;
+    *i2 = help;
+}
+
 int main() {
     // simple example for call by value
     printf("\n--------- call by value ------------\n");
@@ -37,7 +44,8 @@ int main() {
     // simple example for call by reference
     printf("\n-------- call by reference ---------\n");
     a = 16;
-    int *resultPointer=&result;
+    int *resultPointer;
+    resultPointer=&result;
     calculationByReference(a, resultPointer);
     printf("calculationByReference(%d, %p) = %d\n", a, resultPointer, *resultPointer);
 
@@ -54,6 +62,12 @@ int main() {
     changeAnnToPat(name);
     printf("After the change  = %s\n", name);
 
+    printf("\n--------- Swap ---------\n");
+    int left = 0;
+    int right = 1;
+    swap(&left, &right);
+    printf("left = %d\n", left);
+    printf("right = %d\n", right);
 
     return 0;
 }
