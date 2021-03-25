@@ -1,0 +1,3 @@
+/home/walter/Dev/htl/myProject/LearnToCodeInC/03_B_static_vs_dynamic_array/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/walter/Dev/htl/myProject/LearnToCodeInC/03_B_static_vs_dynamic_array/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/walter/Dev/htl/myProject/LearnToCodeInC/03_B_static_vs_dynamic_array/cmake-build-debug/CMakeFiles/03_B_static_vs_dynamic_array.dir
