@@ -3,20 +3,30 @@
 #define ARRAY_SIZE 5
 
 int main() {
-    // int pointer which points to the heap
+    // int pointer which should point to the heap!
     int* dynArrPointer = NULL;
     printf("dynArrPointer = %p\n", dynArrPointer);
+
     // malloc() allocate the memory for 5 integers
     // containing garbage values
     dynArrPointer = (int*)malloc(ARRAY_SIZE * sizeof(int)); // 5*4bytes = 20 bytes
+
+    // don't loose the memory block start
     int* rememberStartPointer = dynArrPointer;
 
+    // value 4 will be stored on first place of allocated space
     *dynArrPointer = 4;
+    // one step forward in the allocated space
     dynArrPointer++;
+    // value 3 will be stored on second place of allocated space
     *dynArrPointer = 3;
+    // one step forward and assigning of value 2 on the third place
     *++dynArrPointer = 2;
+    // same step as before
     *++dynArrPointer = 1;
+    // on step
     dynArrPointer++;
+    // last assignment
     *dynArrPointer = 0;
 
     // set pointer to the start position
