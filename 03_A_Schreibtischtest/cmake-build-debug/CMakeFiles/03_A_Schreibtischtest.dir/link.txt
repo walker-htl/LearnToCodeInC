@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/03_A_Schreibtischtest.dir/main.c.o  -o 03_A_Schreibtischtest 

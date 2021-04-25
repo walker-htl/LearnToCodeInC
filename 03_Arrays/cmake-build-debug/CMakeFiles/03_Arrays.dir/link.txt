@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/03_Arrays.dir/main.c.o  -o 03_Arrays  -lm 

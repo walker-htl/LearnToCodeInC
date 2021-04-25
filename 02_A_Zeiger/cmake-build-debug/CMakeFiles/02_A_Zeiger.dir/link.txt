@@ -1,1 +1,0 @@
-/usr/bin/cc -g   CMakeFiles/02_A_Zeiger.dir/main.c.o  -o 02_A_Zeiger 

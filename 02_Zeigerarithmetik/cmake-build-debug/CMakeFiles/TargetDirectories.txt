@@ -1,3 +1,0 @@
-/home/walter/Dev/htl/myProject/LearnToCodeInC/02_Zeigerarithmetik/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/walter/Dev/htl/myProject/LearnToCodeInC/02_Zeigerarithmetik/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/walter/Dev/htl/myProject/LearnToCodeInC/02_Zeigerarithmetik/cmake-build-debug/CMakeFiles/02_Zeigerarithmetik.dir

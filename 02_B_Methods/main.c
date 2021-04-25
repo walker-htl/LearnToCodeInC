@@ -50,7 +50,8 @@ int main() {
     printf("calculationByReference(%d, %p) = %d\n", a, resultPointer, *resultPointer);
 
     printf("\n--------- return a string ----------\n");
-    printf("Simple text = %s\n", returnTheText());
+    char *pointerToConstString = returnTheText();
+    printf("Simple text = %s\n", pointerToConstString);
 
     printf("\n-------- Not working at all --------\n");
     // Address of stack memory associated with local variable 'name' returned

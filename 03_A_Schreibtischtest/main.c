@@ -22,7 +22,7 @@ int main() {
     start = text;
 
     printf("Show text     : %s\n", text);
-    MethodA(a, start);
+    MethodA(a, text);
     printf("Show text now : %s\n", text);
 
     return 0;
