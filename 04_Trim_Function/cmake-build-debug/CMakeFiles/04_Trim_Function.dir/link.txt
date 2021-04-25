@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/04_Trim_Function.dir/main.c.o -o 04_Trim_Function 
