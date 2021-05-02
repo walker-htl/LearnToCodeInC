@@ -11,7 +11,8 @@ int main() {
     // 6 GB konnten allokiert werden 1.500.000.000 Elemente
     // 8 GB konnten nicht allokiert werden 2.000.000.000 Elemente
     printf ("Wie viele int-Elemente benötigen Sie? ");
-    fflush(stdout);
+    // Tastaturpuffer leeren, da als nächstes sonst ein "Enter" eingelesen würde
+    //fflush(stdout); // ist nicht notwendig, wird aber oft gelehrt!
     scanf("%u", &val);
     arr = createArray(val);
 
