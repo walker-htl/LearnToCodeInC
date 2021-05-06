@@ -1,0 +1,6 @@
+Das ist ein Testfile:
+
+"Hallo, das ist ein Satz mit einem Rufzeichen!"
+Es gibt - wenn auch selten - eine Frage?
+
+Das Ende ist eine Zeile zuviel.
