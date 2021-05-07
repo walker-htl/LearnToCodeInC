@@ -3,12 +3,6 @@
 #include <errno.h>
 #include <string.h>
 #include <unistd.h>
-#include <ctype.h>
-
-int getNumberOfWords(char *content);
-int getNumberOfLines(char *content);
-void printAllPallindroms(char *content);
-void printStatisticsOfLetters(char *content);
 
 int loadFileIntoMemory(const char *filename, char **result)
 {
@@ -50,7 +44,6 @@ int loadFileIntoMemory(const char *filename, char **result)
     return size;
 }
 
-
 int main() {
     char *content;
     int size;
@@ -64,16 +57,6 @@ int main() {
     }
 
     printf("%s\n", content);
-
-    int numberOfLines = getNumberOfLines(content);
-    printf("We found %d lines in %s\n", numberOfLines, fileName);
-
-    int numberOfWords = getNumberOfWords(content);
-    printf("We found %d words in %s\n", numberOfWords, fileName);
-
-    printAllPallindroms(content);
-
-    printStatisticsOfLetters(content);
 
     return 0;
 }
@@ -91,40 +74,4 @@ int getNumberOfLines(char *content) {
     }
 
     return lines;
-}
-
-int getNumberOfWords(char *content) {
-    char* ch = content;
-    int words = 0;
-
-    int inWord = 0;
-
-    while (*ch != '\0')
-    {
-        if (isdigit(*ch) == 0 && inWord == 0) {
-            words++;
-            inWord = 1;
-        }
-
-        if (isdigit(*ch) != 0 || isblank(*ch) != 0) {
-            inWord = 0;
-        }
-
-        ch++;
-    }
-
-    // count last word if there was one.
-    if (inWord == 1) {
-        words++;
-    }
-
-    return words;
-}
-
-void printAllPallindroms(char* content) {
-    // search for all pallindroms and print them
-}
-
-void printStatisticsOfLetters(char *content) {
-    // count each letter and count the
 }
