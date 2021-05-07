@@ -17,7 +17,6 @@
     <list default="true" id="2da809ff-ea6c-4461-9c14-d331b7f6c43c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../07_malloc_free_Example/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../07_malloc_free_Example/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1620241633860</updated>
       <workItem from="1620241635523" duration="3733000" />
-      <workItem from="1620245438137" duration="7897000" />
+      <workItem from="1620245438137" duration="8950000" />
     </task>
     <servers />
   </component>

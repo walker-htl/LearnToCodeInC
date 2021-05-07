@@ -60,18 +60,3 @@ int main() {
 
     return 0;
 }
-
-int getNumberOfLines(char *content) {
-    char* ch = content;
-    int lines = 0;
-
-    while (*ch != '\0') {
-        // Check new line
-        if (*ch == '\n' || *ch == '\0') {
-            lines++;
-        }
-        ch++;
-    }
-
-    return lines;
-}
