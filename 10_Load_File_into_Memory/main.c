@@ -3,6 +3,12 @@
 #include <errno.h>
 #include <string.h>
 #include <unistd.h>
+#include <ctype.h>
+
+int getNumberOfWords(char *content);
+int getNumberOfLines(char *content);
+void printAllPallindroms(char *content);
+void printStatisticsOfLetters(char *content);
 
 int loadFileIntoMemory(const char *filename, char **result)
 {
@@ -12,7 +18,8 @@ int loadFileIntoMemory(const char *filename, char **result)
     printf("--> %s\n", getcwd(buf, 1024));
 
     int size;
-    FILE *f = fopen(filename, "r");
+    // modes: r -> read, b -> binary (necessary for windows!)
+    FILE *f = fopen(filename, "rb");
 
     if (f == NULL)
     {
@@ -58,5 +65,66 @@ int main() {
 
     printf("%s\n", content);
 
+    int numberOfLines = getNumberOfLines(content);
+    printf("We found %d lines in %s\n", numberOfLines, fileName);
+
+    int numberOfWords = getNumberOfWords(content);
+    printf("We found %d words in %s\n", numberOfWords, fileName);
+
+    printAllPallindroms(content);
+
+    printStatisticsOfLetters(content);
+
     return 0;
+}
+
+int getNumberOfLines(char *content) {
+    char* ch = content;
+    int lines = 0;
+
+    while (*ch != '\0') {
+        // Check new line
+        if (*ch == '\n' || *ch == '\0') {
+            lines++;
+        }
+        ch++;
+    }
+
+    return lines;
+}
+
+int getNumberOfWords(char *content) {
+    char* ch = content;
+    int words = 0;
+
+    int inWord = 0;
+
+    while (*ch != '\0')
+    {
+        if (isdigit(*ch) == 0 && inWord == 0) {
+            words++;
+            inWord = 1;
+        }
+
+        if (isdigit(*ch) != 0 || isblank(*ch) != 0) {
+            inWord = 0;
+        }
+
+        ch++;
+    }
+
+    // count last word if there was one.
+    if (inWord == 1) {
+        words++;
+    }
+
+    return words;
+}
+
+void printAllPallindroms(char* content) {
+    // search for all pallindroms and print them
+}
+
+void printStatisticsOfLetters(char *content) {
+    // count each letter and count the
 }
