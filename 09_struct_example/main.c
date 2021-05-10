@@ -10,24 +10,57 @@ struct Person {
    int age;
 };
 
-void initializeConst(void);
+struct Point {
+    int x;
+    int y;
+};
+
+struct Point sumPoints(struct Point a, struct Point b);
+void initializeConst();
 void printArray(struct Person* persons, int i);
 
 int main() {
+    //first simple example
+    struct Point a;
+    a.x = 2;
+    a.y = 5;
+    struct Point b = {3 , 6};
+    struct Point c = sumPoints(a, b);
+    printf("Point c = (%d/%d)\n\n", c.x, c.y);
+
     initializeConst();
     // 5 persons allocated
     struct Person *persons = malloc(NUM_OF_PERSONS * sizeof(struct Person));
 
-    strcpy(persons->firstName, "A");
-    strcpy(persons->secondName, "B");
-    persons->age=25;
+    // why does this not work?
+    //persons->secondName = "test";
 
-    //persons++;
-    strcpy(persons[1].firstName, "B");
-    strcpy(persons[1].secondName, "bb");
-    persons[1].age = 12;
+    // are there an alternative to do this action?
+    strcpy(persons->firstName, "Anton");
+    // see the different way to point to the correct value
+    strcpy((*persons).secondName, "Auer");
+    (*persons).age=25;
 
-    printArray(persons, 2*sizeof(struct Person) );
+    persons++;
+    strcpy(persons->firstName, "Berta");
+    strcpy(persons->secondName, "Barringer");
+    persons->age = 22;
+    // one step back
+    persons--;
+
+    strcpy(persons[2].firstName, "Cäsar");
+    strcpy(persons[2].secondName, "Clown");
+    persons[2].age = 12;
+
+    printArray(persons, 3*sizeof(struct Person) );
+}
+
+struct Point sumPoints(struct Point a, struct Point b) {
+    struct Point result;
+    result.x = a.x + b.x;
+    result.y = a.y + b.y;
+
+    return result;
 }
 
 void printArray(struct Person* persons, int i) {
@@ -39,6 +72,7 @@ void printArray(struct Person* persons, int i) {
         //printf("fN: %s, lN:%s, age:%d\n", (*iterator).firstName, iterator->secondName, iterator->age);
         iterator++;
     }
+
     printf("\n");
 
     // better
@@ -49,9 +83,12 @@ void printArray(struct Person* persons, int i) {
 }
 
 void initializeConst(void) {
+    struct Person test = {"Franz", "Huber",52};
+
     struct Person array[] = {
-            {"Max\0", "Mustermann\0", 24},
-            {"Maria\0", "Musterfrau\0",     27},
+            {"Max", "Mustermann", 24},
+            {"Maria", "Musterfrau",     27},
+            test
     };
 
     printArray(array, sizeof(array));
