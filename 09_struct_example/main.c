@@ -72,6 +72,8 @@ struct Point sumPoints(struct Point a, struct Point b) {
 
 void printArray(struct Person* persons, int i) {
     struct Person *iterator = persons;
+
+    // is this smart? Be aware that this makes no sense!
     int size = i / sizeof persons[0];
 
     for (int i = 0; i < size; i++) {
