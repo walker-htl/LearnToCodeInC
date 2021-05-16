@@ -4,16 +4,18 @@
 
 #define NUM_OF_PERSONS 5
 
+// struct without alias
 struct Person {
    char firstName[15];
    char secondName[15];
    int age;
 };
 
-struct Point {
+// struct with alias and keyword typedef
+typedef struct Point {
     int x;
     int y;
-};
+} Point;
 
 struct Point sumPoints(struct Point a, struct Point b);
 void initializeConst();
@@ -21,10 +23,11 @@ void printArray(struct Person* persons, int i);
 
 int main() {
     //first simple example
-    struct Point a;
+    Point a;
     a.x = 2;
     a.y = 5;
-    struct Point b = {3 , 6};
+    Point b = {3 , 6};
+    // with or without struct, that is here the question? or maybe not?
     struct Point c = sumPoints(a, b);
     printf("Point c = (%d/%d)\n\n", c.x, c.y);
 
@@ -45,14 +48,18 @@ int main() {
     strcpy(persons->firstName, "Berta");
     strcpy(persons->secondName, "Barringer");
     persons->age = 22;
+
     // one step back
     persons--;
 
+    // avoid this syntax if you already used pointer arithmetics!
+    // what happens if you would not make the step back
     strcpy(persons[2].firstName, "Cäsar");
     strcpy(persons[2].secondName, "Clown");
     persons[2].age = 12;
 
-    printArray(persons, 3*sizeof(struct Person) );
+    //persons--;
+    printArray(persons, 4*sizeof(struct Person) );
 }
 
 struct Point sumPoints(struct Point a, struct Point b) {
