@@ -75,6 +75,8 @@ node* createNode(int value) {
     node *result = malloc(sizeof(node));
     result->value = value;
     result->next = NULL;
+
+    return result;
 }
 
 void printList(node *head) {
