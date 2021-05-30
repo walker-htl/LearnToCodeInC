@@ -3,6 +3,7 @@
 
 void testPointer();
 void inc1(int i) {
+    // in this case it makes no sense!
     i++;
 }
 
@@ -14,6 +15,7 @@ void testPointerOfPointer();
 
 void allocate(int* i) {
     // Be aware: here we produce a memory hole (leak!)
+    // Further more, in this case it makes no sense!
     i = malloc(sizeof(int));
 }
 
